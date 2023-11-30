@@ -5,7 +5,7 @@ import styles from "./ShoeInformation.module.css";
 import { ShoeContext } from "../../context/shoeContext";
 import { shoeData } from "../../data/shoeData";
 
-export function ShoeInformation() {
+export function ShoeInformation({className}) {
   const { addCartItem } = useContext(ShoeContext);
 
   // normally would do fetch / .map but its only one shoe

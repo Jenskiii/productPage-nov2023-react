@@ -13,7 +13,7 @@
 .cart {
   cursor: default;
   position: absolute;
-  right: -50rem;
+  right: -100rem;
   top: 2.12rem;
   background-color: hsl(var(--clr-neutral-000));
   border-radius: var(--border-radius-1);

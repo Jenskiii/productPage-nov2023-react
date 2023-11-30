@@ -39,7 +39,7 @@ export function Home() {
             </div>
             <div className="container">
               <div>
-                <ShoeInformation />
+                <ShoeInformation className={styles.test}/>
               </div>
             </div>
           </div>
