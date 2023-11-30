@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container img {
+  max-width: 3.125rem;
+  border-radius: var(--border-radius-3);
+}
+
+.information {
+  line-height: 1.625rem;
+}
+
+.price {
+  color: hsl(var(--clr-neutral-800));
+  font-weight: var(--fw-bold);
+}
+
+/* delete button */
+.delete {
+  cursor: pointer;
+  border: 0;
+  background: 0;
+}
+
+.delete svg {
+  fill: hsl(var(--clr-secondary-700));
+  transition: 200ms ease-in-out;
+}
+.delete:is(:hover, :active) svg {
+  fill: #c70000;
+}

@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-block: 1.5rem;
+}
+
+.nav {
+  margin-right: auto;
+}
+
+/* logo */
+.company-logo {
+  max-width: 8.59375rem;
+}
+
+/* cart */
+.cart {
+  position: relative;
+  display: grid;
+  align-items: center;
+}
+
+/* profile img */
+.profile-img {
+  max-width: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: 2px solid transparent;
+  transition: 250ms ease-in-out;
+}
+
+.profile-img:hover {
+  cursor: pointer;
+  outline: solid 2px hsl(var(--clr-primary-400));
+}
+
+/* mq */
+@media (min-width: 50em) {
+  .container {
+    border-bottom: solid 1px hsl(var(--clr-neutral-100));
+    margin-block: 0;
+    height: 7rem;
+  }
+
+  .profile-img {
+    max-width: 3.125rem;
+    margin-left: 1.89rem;
+  }
+
+  .company-logo {
+    transform: translateY(-3px);
+    margin-right: 2.5rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}

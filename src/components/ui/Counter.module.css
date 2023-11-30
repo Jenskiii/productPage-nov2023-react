@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  width: 100%;
+  background-color: hsl(var(--clr-neutral-100));
+  border-radius: var(--border-radius-1);
+  padding: 0.75rem .6rem;
+}
+
+.button {
+  cursor: pointer;
+  padding-inline: .5rem;
+  border: 0;
+  outline: 0;
+  background: 0;
+  fill: hsl(var(--clr-primary-400));
+  transition: fill 150ms linear;
+}
+.button:hover{
+  fill: hsl(var(--clr-primary-200));
+}
+.button:active{
+  fill: hsl(var(--clr-neutral-800));
+}
+
+.count {
+  color: hsl(var(--clr-neutral-800));
+  font-weight: var(--fw-bold);
+  font-size: var(--fw-450);
+  margin-inline: auto;
+}
+
+@media (min-width: 45em) {
+  .container {
+    max-width: 9.8125rem;
+  }
+}

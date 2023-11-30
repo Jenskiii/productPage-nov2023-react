@@ -1,0 +1,25 @@
+.hero{
+    max-width: 64.8125rem;
+    margin-inline: auto;
+}
+
+@media (min-width: 50em){
+    .hero{
+        margin-top: 2.5rem;
+    }
+}
+
+@media (min-width: 55em){
+    .slider{
+        margin-right: auto;
+        padding-inline: 1.56rem;
+    }
+    .hero{
+        margin-top: 5.62rem;
+        margin-bottom: 8.25rem;
+    }
+
+    .slider-mobile{
+        display: none;
+    }
+}

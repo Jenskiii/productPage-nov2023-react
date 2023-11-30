@@ -1,0 +1,45 @@
+.gallery {
+  max-width: 27.8125rem;
+}
+
+.gallery img {
+  cursor: pointer;
+  border-radius: var(--border-radius-1);
+  transition: 250ms linear;
+}
+
+.gallery-hero{
+  background-color: white;
+}
+.gallery-hero:is(:hover, :active) {
+  opacity: 0.5;
+}
+
+.modal-content {
+  display: grid;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.modal-button{
+  cursor: pointer;
+  justify-self: end;
+  margin-bottom: 1rem;
+  color: hsl(var(--clr-neutral-000));
+  font-size: 1.5rem;
+  border: 0;
+  background: 0;
+  transition: 250ms ease-in-out;
+}
+.modal-button:is(:hover, :active){
+  color: hsl(var(--clr-primary-400));
+}
+
+@media (max-width: 55em) {
+  .gallery {
+    display: none;
+  }
+}

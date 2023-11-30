@@ -1,0 +1,31 @@
+.button {
+  cursor: pointer;
+  fill: hsl(var(--clr-secondary-700));
+  width: 1.36381rem;
+  border: 0;
+  background: 0;
+  transition: fill 250ms ease-in-out;
+}
+.button:is(:hover, :active) {
+  fill: hsl(var(--clr-secondary-800));
+}
+
+.cart-counter {
+  position: absolute;
+  top: -0.55rem;
+  right: -0.4rem;
+  font-size: var(--fs-100);
+  font-weight: var(--fw-bold);
+  color: hsl(var(--clr-neutral-000));
+  background-color: hsl(var(--clr-primary-400));
+  border-radius: 0.40625rem;
+  padding: 0.16rem 0.38rem;
+  line-height: normal;
+  opacity: 0;
+
+  transition: opacity 250ms ease-in-out;
+}
+
+.cart-counter.active {
+  opacity: 1;
+}

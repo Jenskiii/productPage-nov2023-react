@@ -1,0 +1,46 @@
+.slider{
+    position: relative; 
+}
+
+.slider{
+    margin-inline: auto;
+    display: grid;
+    align-items: center;
+}
+
+.arrow-button{
+    cursor: pointer;
+    position: absolute;
+    background: hsl(var(--clr-neutral-000));
+    width: 2.5rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 0;
+    font-size: 1.25rem;
+    transition: color 250ms ease-in-out;
+}
+
+.arrow-button:hover{
+    color: hsl(var(--clr-primary-400));
+}
+.arrow-button:active{
+    color: hsl(var(--clr-primary-400));
+    width: 2.6rem;
+}
+
+.arrow-button:first-child{
+    left: 1rem;
+}
+.arrow-button:last-child{
+    right: 1rem;
+}
+
+@media(min-width:35em){
+    .slider{
+        max-width: 27.8125rem;
+    }
+    .slider img{
+        max-width: 27.8125rem;
+        border-radius: var(--border-radius-1);
+    }
+}
